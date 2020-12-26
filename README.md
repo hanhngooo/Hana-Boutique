@@ -4,6 +4,6 @@ This project focuses on <span style="color:red">SASS</span> and <span style="col
 
 ## :high_heel: Website Demo
 
-[Click HERE to check out the deployed website](). </br>
+[Click HERE to check out the deployed website](https://hanaboutique.netlify.app/). </br>
 
 ![Demo](./images/hana-demo.jpg)
