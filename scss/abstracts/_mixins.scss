@@ -19,3 +19,9 @@
     }
   }
 }
+
+@mixin flexPosition($justContent: center, $alignItem: center) {
+  display: flex;
+  justify-content: $justContent;
+  align-items: $alignItem;
+}
