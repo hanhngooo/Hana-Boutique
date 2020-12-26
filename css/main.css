@@ -21,6 +21,40 @@ html {
   grid-template-rows: repeat(3, min-content);
   grid-gap: 2rem; }
 
+.first-nav {
+  grid-column: 7/10;
+  grid-row: 1/2; }
+  .first-nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; }
+  .first-nav-item {
+    list-style: none; }
+  .first-nav-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.8rem; }
+    .first-nav-link:hover {
+      color: #999999; }
+
+.second-nav {
+  grid-column: 3 / 8;
+  grid-row: 3/4; }
+  .second-nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; }
+  .second-nav-item {
+    list-style: none; }
+  .second-nav-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.8rem; }
+    .second-nav-link:hover {
+      color: #999999; }
+
 .logo {
   grid-column: 1 / 3;
   grid-row: 1 / 2;
@@ -38,3 +72,53 @@ html {
     font-size: 6rem;
     font-weight: lighter;
     letter-spacing: 0.5rem; }
+
+.dropdown-li {
+  position: relative; }
+  .dropdown-li::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f078";
+    font-weight: bold; }
+  .dropdown-li:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s; }
+
+.dropdown {
+  position: absolute;
+  top: 3rem;
+  width: 11rem;
+  background-color: #e6e2e4;
+  text-align: center;
+  border-radius: 0.2rem;
+  visibility: hidden;
+  opacity: 0; }
+  .dropdown-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; }
+  .dropdown-item {
+    list-style: none; }
+  .dropdown-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.8rem; }
+    .dropdown-link:hover {
+      color: #999999; }
+  .dropdown::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1.5rem;
+    left: 7.3rem;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #e6e2e4;
+    border-left: 15px solid transparent; }
+  .dropdown-item {
+    padding: 1rem 1rem 0.9rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #b3b3b3; }
+  .dropdown-link {
+    font-weight: 300;
+    font-size: 1.6rem; }
